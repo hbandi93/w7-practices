@@ -1,42 +1,54 @@
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: none;
-    box-sizing: border-box;
-  
-    background: transparent;
-  
-    font-family: inherit;
-    
-    text-decoration: none;
-  }
-  
-  ol, ul, li {
-    list-style:none;
-    display:block;
-  }
-  
-  table {
-    border-collapse:collapse;
-    border-spacing:0
-  }
-  
-  a img {
-    border: none
-  }
-  
-  button, a {
-    cursor: pointer;
-    color: inherit
-  }
-  
-  textarea {
-    resize: none
-  }
-  
-  button, input, textarea, select {
-    appearance: none !important;
-    -webkit-appearance: none !important;
-    border-radius: 0
-  }
+body{
+  background-image: url("https://wallpapercave.com/wp/YQlHMsb.jpg");
+  display: flex;
+  justify-content: center;
+}
+
+#root{
+  padding: 10px;
+  border: 5px solid green;
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  background-color: grey;
+  border-radius: 10px;
+}
+
+form{
+  font-family: 'Mukta', sans-serif;
+  line-height: 40px;
+  height: 80vh;
+}
+
+label{
+  display: block;
+  font-weight: bold;
+}
+
+input[type="email"]{
+  width: 200px;
+}
+
+input[type="text"]{
+  width: 150px;
+}
+
+input[type=file]{
+  width: fit-content;
+  color:transparent;
+}
+
+button{
+  width: 100px;
+  height: 40px;
+  margin:10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: chartreuse;
+}
+
+input:focus{
+  background-color: lightgray;
+}
+
